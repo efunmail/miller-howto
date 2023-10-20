@@ -11,8 +11,12 @@ filter '$id > 1'
 # // MODIFY a field's value
 then put '$id = $id + 1'
 
-# // MODIFY a field's value - with an ENV VAR
-then put -s NUM=3 '$id = $id + @NUM'
+# // MODIFY a field's value - with a var
+then put -s NUM=$NUM '$id = $id + @NUM'
+
+# // DSL has a `system()` function
+# // https://github.com/johnkerl/miller/issues/315#issuecomment-595652559
+then put '$sys_call_PATH = system("echo '"$PATH"'")'
 
 # // ADD a field
 then put '$period = 2023'
