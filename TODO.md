@@ -14,9 +14,15 @@ then put '$id = $id + 1'
 # // MODIFY a field's value - with a var
 then put -s NUM=2 '$id = $id + @NUM'
 
+
+# // Can access ENV variables...
+then put '$id = $id + int(ENV["NUM"])'
+then put '@x = ENV["NUM"]; $ENV_NUM = @x'
+
 # // DSL has a `system()` function
 # // https://github.com/johnkerl/miller/issues/315#issuecomment-595652559
 then put '$sys_call_PATH = system("echo '"$PATH"'")'
+
 
 # // ADD a field
 then put '$period = 2023'
