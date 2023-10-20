@@ -1,3 +1,11 @@
+## TODO
+
+https://miller.readthedocs.io/en/latest/reference-dsl-syntax/#expressions-from-files
+
+- [ ] For `put/filter` verbs, can put 'expressions' in (**shareable!**) files:
+    - Functions - (e.g. `func f(a, b) { }`)
+    - Default values - (e.g. `begin {@count=is_present(@count) ? @count : 10}`)
+
 ## WIP
 
 - `script.mlr`:
