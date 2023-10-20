@@ -18,8 +18,11 @@ then put -s NUM=2 '$id = $id + @NUM'
 
 
 # // Can access ENV variables...
+# // BUILT-IN vars: https://miller.readthedocs.io/en/latest/reference-dsl-variables/#built-in-variables
 then put '$id = $id + int(ENV["NUM"])'
+
 then put '@x = ENV["NUM"]; $ENV_NUM = @x'
+
 
 # // DSL has a `system()` function
 # // https://github.com/johnkerl/miller/issues/315#issuecomment-595652559
