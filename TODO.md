@@ -35,7 +35,15 @@ then put '$period = 2023'
 then cat
 ```
 
-- Usage:
+- CSV:
+
+```csv
+id,name,age
+1,Ami,20
+2,Bob,80
+```
+
+- Run:
 
 ```sh
 cat csv.csv | ./script.mlr
@@ -43,4 +51,19 @@ cat csv.csv | NUM=10 ./script.mlr
 
 ./script.mlr csv.csv
 NUM=10 ./script.mlr csv.csv
+```
+
+- Output:
+
+```json
+[
+{
+  "id": 6,
+  "name": "Bob",
+  "age": 80,
+  "ENV_NUM": "",
+  "sys_call_PATH": "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin",
+  "period": 2023
+}
+]
 ```
