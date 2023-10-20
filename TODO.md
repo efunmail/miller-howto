@@ -58,10 +58,10 @@ NUM=10 ./script.mlr csv.csv
 ```json
 [
 {
-  "id": 6,
+  "id": 15,
   "name": "Bob",
   "age": 80,
-  "ENV_NUM": "",
+  "ENV_NUM": "10",
   "sys_call_PATH": "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin",
   "period": 2023
 }
