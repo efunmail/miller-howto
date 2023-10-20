@@ -1,5 +1,7 @@
 ## WIP
 
+- `script.mlr`:
+
 ```sh
 #!/usr/bin/env -S  mlr -s
 
@@ -31,4 +33,14 @@ then put '$period = 2023'
 #then cut -f name,age
 
 then cat
+```
+
+- Usage:
+
+```sh
+cat csv.csv | ./script.mlr
+cat csv.csv | NUM=10 ./script.mlr
+
+./script.mlr csv.csv
+NUM=10 ./script.mlr csv.csv
 ```
