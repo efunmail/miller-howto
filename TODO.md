@@ -12,7 +12,7 @@ filter '$id > 1'
 then put '$id = $id + 1'
 
 # // MODIFY a field's value - with a var
-then put -s NUM=$NUM '$id = $id + @NUM'
+then put -s NUM=2 '$id = $id + @NUM'
 
 # // DSL has a `system()` function
 # // https://github.com/johnkerl/miller/issues/315#issuecomment-595652559
